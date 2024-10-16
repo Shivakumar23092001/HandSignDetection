@@ -1,0 +1,6 @@
+import h5py
+
+# Open the model file
+with h5py.File('path/to/your/keras_model.h5', 'r') as file:
+    # List all groups (layers, etc.) in the file
+    print(list(file.keys()))
